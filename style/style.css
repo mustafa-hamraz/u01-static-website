@@ -3,18 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+nav{
+    margin: 0%;
+}
 
 ul{
-    background-color: rgb(0,191,255);
+    /*background-color: rgb(0,191,255);*/
     margin-left: auto;
     margin-right: auto;
     height: 4rem;
     width: 100%;
 }
 li{
-    
     height: 4rem;
     width: 10rem;
     display: inline-block;
-
+    text-align: center;
+}
+.home{
+    background-color: #2552B0;
+}
+.about{
+    background-color: #2C3E88;
+}
+.contact{
+    background-color: ;
+}
+.logo{
+    height: 4rem;
+    width: auto;
 }
