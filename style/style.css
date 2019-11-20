@@ -3,33 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
-nav{
-    margin: 0%;
-}
-
-ul{
-    /*background-color: rgb(0,191,255);*/
-    margin-left: auto;
-    margin-right: auto;
-    height: 4rem;
+ /** Menu START **/
+nav{    
+    margin: 0;
+    padding: 0rem;
+    border: 0rem;
+    background-color: #312f2fda;
+    height: 7rem;
     width: 100%;
-}
-li{
-    height: 4rem;
-    width: 10rem;
-    display: inline-block;
-    text-align: center;
-}
-.home{
-    background-color: #2552B0;
-}
-.about{
-    background-color: #2C3E88;
-}
-.contact{
-    background-color: ;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif ;
+    
 }
 .logo{
-    height: 4rem;
-    width: auto;
+    background-color: white;
+    display: inline-block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 2rem 2rem 0;
+    box-shadow: 0.1rem 0.13rem rgb(172, 169, 169);
+    transition: 0.3s;  
+}
+li{
+    display: inline-block;
+    margin: 3.5rem 2rem 0 2rem;
+    text-align: center;
+    color: rgb(247, 242, 242);
+    font-size: 1.5rem;
+}
+/** Menu END **/
+
+.backgrounf-pic{
+    width: 100%;
 }
