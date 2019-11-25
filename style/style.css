@@ -34,6 +34,18 @@ li{
 }
 /** Menu END **/
 
-.backgrounf-pic{
+.background-pic{
     width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.pic-section{
+    display: inline-block;
+}
+.box1-img{
+    height: 450px;
+    width: 450px;
+    border: 1rem black;
+    background-image: src="img/pic-box1.jpg";
 }
