@@ -14,30 +14,46 @@ nav{
     padding: 0rem;
     border: 0rem;
     background-color: #312f2fda;
-    height: 7rem;
+    height: 4rem;
     width: 100%;
-    display: flex;  
+    display: flex; 
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    position: absolute;
 }
-.logo{
+#logo{
     background-color: white;
     display: inline-block;
-    height: 100%;
-    margin: 0;
+    height: 5rem;
+    margin: 1.5rem 0 auto 0;
     padding: 0;
     border-radius: 0 2rem 2rem 0;
     box-shadow: 0.1rem 0.13rem rgb(172, 169, 169);
     transition: 0.3s;  
+    position: absolute;
+}
+#logo:hover{
+    background-color: greenyellow;
+    cursor: pointer;
 }
 li{
     display: inline-block;
-    margin: 3.5rem 2rem 0 2rem;
+    margin: 1rem -5rem 0 8rem;
     text-align: center;
     color: rgb(247, 242, 242);
     font-size: 1.5rem;
 }
+li:hover{
+    color: greenyellow;
+    cursor: pointer;
+}
+#om-oss{
+    margin: 1rem 1rem 0 6rem
+}
 /** Menu END **/
 
-.background-pic{
+#background-pic{
     width: 100%;
     margin: 0;
     padding: 0;
@@ -45,7 +61,7 @@ li{
 }
 
 /** Price START**/
-.img-section{
+#img-section{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -62,6 +78,10 @@ h1{
     padding: 0rem;
     margin: 0 2.5rem 2.5rem 2.5rem;
    
+}
+.img-box:hover{
+    border: 0.09rem black solid;
+    cursor: pointer;
 }
 .img-holder{
     position: relative;
@@ -89,3 +109,18 @@ h1{
     margin: 2rem auto 0 auto;
 }
 /** Video END**/
+
+/** Footer START**/
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #312f2fda;
+    margin: 5rem 0 0 0;
+}
+.footer-text{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.4rem;
+}
+
+/** Footer END**/
