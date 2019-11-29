@@ -17,9 +17,6 @@ nav{
     height: 4rem;
     width: 100%;
     display: flex; 
-    position: fixed;
-    top: 0; 
-    width: 100%; 
     position: absolute;
 }
 #logo{
@@ -37,19 +34,19 @@ nav{
     background-color: greenyellow;
     cursor: pointer;
 }
-li{
+.hidden{
+    display: none;
+}
+.nav-lista{
     display: inline-block;
     margin: 1rem -5rem 0 8rem;
     text-align: center;
     color: rgb(247, 242, 242);
     font-size: 1.5rem;
 }
-li:hover{
+.nav-lista:hover{
     color: greenyellow;
     cursor: pointer;
-}
-#om-oss{
-    margin: 1rem 1rem 0 6rem
 }
 /** Menu END **/
 
@@ -113,14 +110,132 @@ h1{
 /** Footer START**/
 footer{
     width: 100%;
-    height: 200px;
+    height: 10rem;
     background-color: #312f2fda;
-    margin: 5rem 0 0 0;
-}
-.footer-text{
+    margin: 2rem 0 0 0;
+    padding: 1rem 0 0 0;
+    color: rgb(247, 242, 242);
     font-size: 1rem;
-    margin: 0;
-    padding: 0.4rem;
 }
-
+footer > ul {
+    text-align: center;
+}
 /** Footer END**/
+
+/** Phone(500px or less) START**/
+@media only screen and (max-width: 500px){
+    nav{
+        height: 0;
+        width: 0;
+    }
+    #logo{
+        background-color: white;
+        display: inline-block;
+        height: 5rem;
+        margin: -2rem 0 0 22rem;
+        padding: 0;
+        border-radius: 1rem 0rem 1rem 0rem;
+        box-shadow: 0.1rem 0.13rem rgb(172, 169, 169);  
+        position: absolute;
+        transition: 0ms;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        /*background: #232323;*/
+        /*color: #cdcdcd;*/
+        font-family: "Avenir Next", "Avenir", sans-serif;
+    }
+    #menuToggle{
+        display: block;
+        position: relative;
+        top: 50px;
+        left: 50px;
+
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    #menuToggle a{
+        text-decoration: none;
+        color: #232323;
+        transition: color 0.3s ease;
+    }
+    #menuToggle input{
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        -webkit-touch-callout: none;
+    }
+    #menuToggle span{
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        
+        background: #cdcdcd;
+        border-radius: 3px;
+        
+        z-index: 1;
+        
+        transform-origin: 4px 0px;
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+    #menuToggle span:first-child{
+        transform-origin: 0% 0%;
+    }
+    #menuToggle span:nth-last-child(2){
+        transform-origin: 0% 100%;
+    }
+    #menuToggle input:checked ~ span{
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+    #menuToggle input:checked ~ span:nth-last-child(3){
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    #menuToggle input:checked ~ span:nth-last-child(2){
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    #menu{
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        
+        background: #ededed;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    #menu li{
+        padding: 10px 0;
+        font-size: 22px bold;
+        color: black;
+    }
+    #menuToggle input:checked ~ ul{
+        transform: none;
+    }
+
+    .imbeded-video{
+        height: 300px;
+    }
+
+}
+/** Phone(500px or less) END**/

@@ -8,47 +8,57 @@
     <title>CleanEyes-UF</title>
 </head>
 <body>
-    <nav>
-        <a href="index.html"><img id="logo" src="img/logo.png" alt="Company Logo"></a>
-        <ul>
-            <li>Om oss</li>
-            <li>Kontakt</li>
-            <li>Om UF</li>
-        </ul>
-    </nav>
+    <header>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <a href="index.html"><img id="logo" src="img/logo.png" alt="Company Logo"></a>
+                <input type="checkbox" class="hidden"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="#"><li class="nav-lista">Om oss</li></a>
+                    <a href="#"><li class="nav-lista">Kontakt</li></a>
+                    <a href="#"><li class="nav-lista">Om UF</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
     
-    <img id="background-pic" src="img/glasses.jpg" alt="background-pic">
+    <main>
+        <img id="background-pic" src="img/glasses.jpg" alt="background-pic">
 
-    <h1>Priser</h1>
-    <section id="img-section">
-        <div class="img-holder">
-            <img class="img-box" src="img/pic-box1.jpg" alt="price for one">
-            <div class="price-text">Pris: 1st (20 SEK)</div>
-        </div>
-        <div class="img-holder">
-            <img class="img-box" src="img/pic-box2.jpg" alt="price for tow">
-            <div class="price-text">Pris: 2st (30 SEK)</div>
-        </div>
-        <div class="img-holder">
-            <img class="img-box" src="img/pic-box3.jpg" alt="price for three">
-            <div class="price-text">Pris: 3st  (50 SEK)</div>
-        </div> 
-    </section>
+        <h1>Priser</h1>
+        <section id="img-section">
+            <div class="img-holder">
+                <img class="img-box" src="img/pic-box1.jpg" alt="price for one">
+                <div class="price-text">Pris: 1st (20 SEK)</div>
+            </div>
+            <div class="img-holder">
+                <img class="img-box" src="img/pic-box2.jpg" alt="price for tow">
+                <div class="price-text">Pris: 2st (30 SEK)</div>
+            </div>
+            <div class="img-holder">
+                <img class="img-box" src="img/pic-box3.jpg" alt="price for three">
+                <div class="price-text">Pris: 3st  (50 SEK)</div>
+            </div> 
+        </section>
 
-    <h1>Bruksanvisning</h1>
-    <iframe 
-        class="imbeded-video"
-        src="https://www.youtube.com/embed/yUAHkArVLVI" 
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-
+        <h1>Bruksanvisning</h1>
+        <iframe 
+            class="imbeded-video"
+            src="https://www.youtube.com/embed/yUAHkArVLVI" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>    
+    </main>
+    
     <footer>
-        <ul class="footer-info">
-            <li class="footer-text">Rönninge gymnasium</li><br>
-            <li class="footer-text">Sandbäcksvägen 10</li><br>
-            <li class="footer-text">144 62 Rönninge</li><br>
-            <li class="footer-text">CleanEyes-UF</li>
+        <ul>
+            <li>CleanEyes-UF</li><br>
+            <li>Rönninge gymnasium</li><br>
+            <li>Sandbäcksvägen 10</li><br>
+            <li>144 62 Rönninge</li>
         </ul>
     </footer>
 </body>
