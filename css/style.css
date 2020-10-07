@@ -490,7 +490,8 @@ nav ul li a {
 }
 
 .journal-block .journal-info img:hover{
-  opacity: 0.5;
+  transform: scale(1.05);
+  opacity: 0.8;
 
 }
 .journal-block .journal-info img {
