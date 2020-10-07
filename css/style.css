@@ -483,6 +483,16 @@ nav ul li a {
   position: relative;
 }
 
+.journal-info{
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.journal-block .journal-info img:hover{
+  opacity: 0.5;
+
+}
 .journal-block .journal-info img {
   max-width: 100%;
 }
